@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>vhackusm</title>
+  <style>
+    body{
+      background:rgb(19, 30, 35);
+    }
+  .vhack-logo{
+   width: 33px;
+   position:fixed;
+   top:15px;
+   cursor:pointer;
+}
+
+.v-hack{
+  font-family: Arial;
+  font-weight: bold;
+  cursor:pointer;
+  color:white;
+  position:fixed;
+  top: 7px;
+  left:60px;
+}
+
+.log-in{
+  background-color: #EE9455;
+  color: black;
+  border:none;
+  height:50px;
+  width:100px;
+  border-radius:18px;
+  font-weight: bold;
+font-size:13px;
+cursor:pointer;
+margin-left:8px;
+transition:box-shadow 0.15s;
+vertical-align:top;
+transition: background-color 0.2s,color 0.5s;
+top: 5px;
+right:10px;
+position:fixed;
+}
+
+.log-in:hover{
+  background-color:rgb(227, 235, 247);
+  color:black;
+
+}
+
+.log-in:active{
+  opacity:0.7;}
+
+.home{
+  cursor:pointer;
+  margin-left: 300px;
+  font-weight: bolder;
+  background-color: rgb(31, 30, 33);
+  color:white;
+  border: none;
+  border-radius: 5px;
+  height:50px;
+  transition:background-color 0.15s,color 0.15s;
+  width:80px;}
+.home:hover{
+  background-color:rgb(52, 51, 55);
+  color:rgb(151, 181, 201);}
+
+.tentatives{
+  margin-left:0px;
+  cursor:pointer;
+  font-weight: bolder;
+  background-color: rgb(31, 30, 33);
+  color:white;
+  border: none;
+  height:50px;
+  transition:background-color 0.15s,color 0.15s;
+  width:80px;}
+.tentatives:hover{
+  background-color:rgb(52, 51, 55);
+  color:rgb(151, 181, 201);} 
+
+.speakers{
+  cursor:pointer;
+  font-weight: bolder;
+  background-color: rgb(31, 30, 33);
+  color:white;
+  border: none;
+  height:50px;
+  transition:background-color 0.15s,color 0.15s;
+  width:80px;}
+.speakers:hover{
+  background-color:rgb(52, 51, 55);
+  color:rgb(151, 181, 201);} 
+ 
+  .judges{
+  cursor:pointer;
+  font-weight: bolder;
+  background-color: rgb(31, 30, 33);
+  color:white;
+  border: none;
+  height:50px;
+  transition:background-color 0.15s,color 0.15s;
+  width:80px;}
+.judges:hover{
+  background-color:rgb(52, 51, 55);
+  color:rgb(151, 181, 201);} 
+  
+  .mentors{
+  cursor:pointer;
+  font-weight: bolder;
+  background-color: rgb(31, 30, 33);
+  color:white;
+  border: none;
+  height:50px;
+  transition:background-color 0.15s,color 0.15s;
+  width:80px;}
+.mentors:hover{
+  background-color:rgb(52, 51, 55);
+  color:rgb(151, 181, 201);} 
+  
+  .partners{
+  cursor:pointer;
+  font-weight: bolder;
+  background-color: rgb(31, 30, 33);
+  color:white;
+  border: none;
+  height:50px;
+  transition:background-color 0.15s,color 0.15s;
+  width:80px;}
+.partners:hover{
+  background-color:rgb(52, 51, 55);
+  color:rgb(151, 181, 201);} 
+  
+  .faqs{
+  cursor:pointer;
+  font-weight: bolder;
+  background-color: rgb(31, 30, 33);
+  color:white;
+  border: none;
+  height:50px;
+  transition:background-color 0.15s,color 0.15s;
+  width:80px;}
+.faqs:hover{
+  background-color:rgb(52, 51, 55);
+  color:rgb(151, 181, 201);} 
+  
+  .rules{
+  cursor:pointer;
+  font-weight: bolder;
+  background-color: rgb(31, 30, 33);
+  color:white;
+  border: none;
+  height:50px;
+  transition:background-color 0.15s,color 0.15s;
+  width:80px;}
+.rules:hover{
+  background-color:rgb(52, 51, 55);
+  color:rgb(151, 181, 201);} 
+  
+  .ot{
+  cursor:pointer;
+  font-weight: bolder;
+  background-color: rgb(31, 30, 33);
+  color:white;
+  border: none;
+  height:50px;
+  transition:background-color 0.15s,color 0.15s;
+  width:150px;}
+.ot:hover{
+  background-color:rgb(52, 51, 55);
+  color:rgb(151, 181, 201);}  
+
+ .head{
+  font-family:Skranji;
+  margin-top:85px;
+  margin-left:490px;
+  font-size: 45px;
+  color:rgb(239, 246, 139);
+  } 
+
+.all{
+  cursor:pointer;
+  font-size: 15px;
+  border:none;
+  border-radius:10px;
+  font-weight: bolder;
+  margin-left: 290px;
+  background-color: rgb(19, 30, 35);
+  color:white;
+  border: none;
+  height:50px;
+  transition:background-color 0.15s,color 0.15s;
+  width:55px;}
+.all:hover{
+  background-color:rgb(52, 51, 55);
+  color:rgb(151, 181, 201);} 
+
+  .tp{
+  border:none;
+  cursor:pointer;
+  font-size: 15px;
+  border-radius:10px;
+  font-weight: bolder;
+  background-color: rgb(19, 30, 35);
+  color:white;
+  border: none;
+  height:50px;
+  transition:background-color 0.15s,color 0.15s;
+  width:160px;}
+.tp:hover{
+  background-color:rgb(52, 51, 55);
+  color:rgb(151, 181, 201);}  
+
+  .prog{
+  border:none;
+  cursor:pointer;
+  font-size: 15px;
+  border-radius:10px;
+  font-weight: bolder;
+  background-color: rgb(19, 30, 35);
+  color:white;
+  border: none;
+  height:50px;
+  transition:background-color 0.15s,color 0.15s;
+  width:140px;}
+.prog:hover{
+  background-color:rgb(52, 51, 55);
+  color:rgb(151, 181, 201);}  
+ 
+  .prd{
+  border:none;
+  cursor:pointer;
+  font-size: 15px;
+  border-radius:10px;
+  font-weight: bolder;
+  background-color: rgb(19, 30, 35);
+  color:white;
+  border: none;
+  height:50px;
+  transition:background-color 0.15s,color 0.15s;
+  width:350px;}
+.prd:hover{
+  background-color:rgb(52, 51, 55);
+  color:rgb(151, 181, 201);}  
+
+  .pm{
+  border:none;
+  margin-left:240px;
+  cursor:pointer;
+  font-size: 15px;
+  border-radius:10px;
+  font-weight: bolder;
+  background-color: rgb(19, 30, 35);
+  color:white;
+  border: none;
+  height:50px;
+  transition:background-color 0.15s,color 0.15s;
+  width:220px;}
+.pm:hover{
+  background-color:rgb(52, 51, 55);
+  color:rgb(151, 181, 201);}  
+  
+  .sp{
+  border:none;
+  cursor:pointer;
+  font-size: 15px;
+  border-radius:10px;
+  font-weight: bolder;
+  background-color: rgb(19, 30, 35);
+  color:white;
+  border: none;
+  height:50px;
+  transition:background-color 0.15s,color 0.15s;
+  width:140px;}
+.sp:hover{
+  background-color:rgb(52, 51, 55);
+  color:rgb(151, 181, 201);}  
+  
+  .logistics{
+  border:none;
+  cursor:pointer;
+  font-size: 15px;
+  border-radius:10px;
+  font-weight: bolder;
+  background-color: rgb(19, 30, 35);
+  color:white;
+  border: none;
+  height:50px;
+  transition:background-color 0.15s,color 0.15s;
+  width:120px;}
+.logistics:hover{
+  background-color:rgb(52, 51, 55);
+  color:rgb(151, 181, 201);}  
+  
+  .tech{
+  border:none;
+  cursor:pointer;
+  font-size: 15px;
+  border-radius:10px;
+  font-weight: bolder;
+  background-color: rgb(19, 30, 35);
+  color:white;
+  border: none;
+  height:50px;
+  transition:background-color 0.15s,color 0.15s;
+  width:130px;}
+.tech:hover{
+  background-color:rgb(52, 51, 55);
+  color:rgb(151, 181, 201);}  
+  
+  .dm{
+  border:none;
+  cursor:pointer;
+  font-size: 15px;
+  border-radius:10px;
+  font-weight: bolder;
+  background-color: rgb(19, 30, 35);
+  color:white;
+  border: none;
+  height:50px;
+  transition:background-color 0.15s,color 0.15s;
+  width:200px;}
+.dm:hover{
+  background-color:rgb(52, 51, 55);
+  color:rgb(151, 181, 201);}  
+
+
+.box{
+  height:100px;
+  width:200px;
+  background-color:white;
+  text-align:center;
+  padding:10px;
+  margin:10px;
+  display:flex;
+  align-items:}
+.container {
+  position: relative;
+  display: inline-block;}
+.half-square {
+  position: absolute;
+  width: 190px; 
+  height: 200px; 
+  margin-left:155px;
+  background-color: white;
+  top: 60%; 
+  left: 30;
+  transform: translateY(-50%);
+  clip-path: inset(0 0 50% 0); 
+  z-index: 1;}
+.photo {
+  position: relative;
+  object-fit: cover;
+  width:200px;
+  object-position:20% top;
+  height:200px;
+  margin-left:150px;
+  z-index:2;}
+.photo:hover{
+    width:210px;
+    transition-duration: 0.5s;}
+.lqy{
+  color:white;
+  font-size: 16px;
+  font-family: arial;
+  margin-left: 190px;}
+.tc{
+  color:white;
+  font-size: 16px;
+  font-family: arial;
+  margin-left: 170px;
+margin-bottom:0px;}
+ .fb{
+  margin-left:200px;} 
+.ig{
+  margin-left:10px;
+ } 
+
+
+
+ </style>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+ </head>
+
+  <body>
+    <img class="vhack-logo" src="VHack_Logo.png">   
+    <p class="v-hack">V HACK</p>
+    <button class="log-in">Log in</button>
+    <button class="home">Home</button>
+    <button class="tentatives">Tentative</button>
+    <button class="speakers">Speakers</button>
+    <button class="judges">Judges</button>
+    <button class="mentors">Mentors</button>
+    <button class="partners">Partners</button>
+    <button class="faqs">FAQs</button>
+    <button class="rules">Rules</button>
+    <button class="ot">Organising Team</button>
+    <p class="head">Meet the team.</p>
+
+    <button class="all">All</button>
+    <button class="tp">Top Committee</button>
+    <button class="prog">Programme</button>
+    <button class="prd">Public Relations and Documentation</button>
+    <button class="pm">Publicity and Marketing</button>
+    <button class="sp">Sponsorship</button>
+    <button class="logistics">Logistics</button>
+    <button class="tech">Technical</button>
+    <button class="dm">Design & Multimedia</button>
+
+
+  <div class="container">
+    <div class="half-square"></div>
+    <img src="qianyun.png" alt="Photo" class="photo">
+    <h2 class="lqy">Lim Qian Yun</h2>
+    <pre class="tc">
+    Top Committee
+   Project Director
+    </pre>
+    <a class="fb" href="https://www.facebook.com/qy.lim.5" target="_blank"><i class="fa-brands fa-facebook" style="color: #a9b0bc;"></i></a>
+    <a class="ig" href="https://www.instagram.com/qiannyunnn/" target="_blank"><i class="fa-brands fa-instagram" style="color: #a9b0bc;"></i></a>
+    <a class="ig" href="https://www.linkedin.com/in/lim-qian-yun-292707256" target="_blank"><i class="fa-brands fa-linkedin" style="color: #a9b0bc;"></i></a>
+  </div>
+
+
+  <div class="container">
+    <div class="half-square"></div>
+    <img src="wwe.png" alt="Photo" class="photo">
+    <h2 class="lqy">Wong Wei Ze</h2>
+    <pre class="tc">
+    Top Committee
+Vice Project Director   </pre>
+    <a class="fb" href="https://www.facebook.com/weize.wong.3" target="_blank"><i class="fa-brands fa-facebook" style="color: #a9b0bc;"></i></a>
+    <a class="ig" href="https://www.instagram.com/weize_0912/" target="_blank"><i class="fa-brands fa-instagram" style="color: #a9b0bc;"></i></a>
+    <a class="ig" href="https://www.linkedin.com/in/wong-wei-ze-b61b62208?original_referer=https%3A%2F%2Fvhackusm.com%2F" target="_blank"><i class="fa-brands fa-linkedin" style="color: #a9b0bc;"></i></a>
+  </div>
+
+  <div class="container">
+    <div class="half-square"></div>
+    <img src="lingges.png" alt="Photo" class="photo">
+    <h2 class="lqy">Lingges A/L Muniandy</h2>
+    <pre class="tc">
+    Top Committee
+Vice Project Director   </pre>
+<a class="fb" href="https://www.facebook.com/weize.wong.3" <i class="fa-brands fa-facebook" style="color: #a9b0bc;"></i></a>
+<a class="ig" href="https://www.instagram.com/lingges_muniandy/" target="_blank"><i class="fa-brands fa-instagram" style="color: #a9b0bc;"></i></a>
+<a class="ig" href="https://www.linkedin.com/in/lingges-muniandy-8a4157171" target="_blank"><i class="fa-brands fa-linkedin" style="color: #a9b0bc;"></i></a>
+  </div>
+
+  <div class="container">
+    <div class="half-square"></div>
+    <img src="maisarah.png" alt="Photo" class="photo">
+    <h2 class="lqy">Siti Maisarah Binti Khairul Anwar</h2>
+    <pre class="tc"> 
+      Top Committee
+        Secretary   </pre>
+    <a class="fb" href="https://www.facebook.com/sitimaisarah.khairulanwar" target="_blank"><i class="fa-brands fa-facebook" style="color: #a9b0bc;"></i></a>
+    <a class="ig" href="https://www.instagram.com/my.saraaah/" target="_blank"><i class="fa-brands fa-instagram" style="color: #a9b0bc;"></i></a>
+    <a class="ig" href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQFMG4jVZ1ftngAAAZMHK8-gaDe7w-fMjU619DMCabUY1LY77_yuiFSWFLN45UBtZ7QUefDxP6YvKAJBzggSP-YAtaR1lSiD9nFlRqasbUIKl9DLMnQ1LRK0oareKJQCC1qt2dg=&original_referer=https://vhackusm.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fsiti-maisarah-92029129b" target="_blank"><i class="fa-brands fa-linkedin" style="color: #a9b0bc;"></i></a>
+        
+  </div>
+
+  <div class="container">
+    <div class="half-square"></div>
+    <img src="junliang.png" alt="Photo" class="photo">
+    <h2 class="lqy">Chew Jun Liang</h2>
+    <pre class="tc"> 
+      Top Committee
+        Treasurer   </pre>
+        <a class="fb" href="https://www.facebook.com/junliang.chew.1115" target="_blank"><i class="fa-brands fa-facebook" style="color: #a9b0bc;"></i></a>
+        <a class="ig" href="https://www.instagram.com/junliang_chew/" target="_blank"><i class="fa-brands fa-instagram" style="color: #a9b0bc;"></i></a>
+        <a class="ig" href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQE1_4testOPiAAAAZMHLUK4Vp-m61NAvfvAySeVyQgQHy6HPnXcIRWSIIE-UpwkU6n4o0JzxZgNWRy2YAXZ4I9NM9ixN7qlgKw562NWj5I9zW4xm1YuvcFv1VWzRcRmF65WoOc=&original_referer=https://vhackusm.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjunliang-chew-ab0840297" target="_blank"><i class="fa-brands fa-linkedin" style="color: #a9b0bc;"></i></a>
+               
+  </div>
+
+  <div class="container">
+    <div class="half-square"></div>
+    <img src="weiyi.png" alt="Photo" class="photo">
+    <h2 class="lqy">Tan Wei Yi</h2>
+    <pre class="tc"> 
+      Programme
+    Head Executive   </pre>
+    <a class="fb" href="https://www.facebook.com/weiyi.0206" target="_blank"><i class="fa-brands fa-facebook" style="color: #a9b0bc;"></i></a>
+    <a class="ig" href="https://www.instagram.com/weiyi_0206/#" target="_blank"><i class="fa-brands fa-instagram" style="color: #a9b0bc;"></i></a>
+    <a class="ig" href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQFHNn29m9olkAAAAZMHLr2gLKvxyuzn4a4UwoAGoyjswiYLVWXEeb8naK0NoilIY5I0SdBcf6qW49p1AM-5rQ18Fi60CfbS63hRXnQ4Nm031J15FfxSUeLfkZBFkkUiI5G_jY0=&original_referer=https://vhackusm.com/&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fweiyitan03" target="_blank"><i class="fa-brands fa-linkedin" style="color: #a9b0bc;"></i></a>
+           
+  </div>
+  
+  
+  </body>
+</html>
